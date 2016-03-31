@@ -4,10 +4,11 @@ A tvdb version2 API client, generated using swagger's codegen
 
 #### Usage
  - For ease of demonstration i've configured the following variables before going into the API's methods.
-```base_url = 'https://api-beta.thetvdb.com'
-  client_id = 'username' (optional! Only required for the /user routes)
-  client_secret = 'pass' (optional! Only required for the /user routes)
-  apikey = "0629B785CE550C8D"
+```
+base_url = 'https://api-beta.thetvdb.com'
+client_id = 'username' (optional! Only required for the /user routes)
+client_secret = 'pass' (optional! Only required for the /user routes)
+apikey = "0629B785CE550C8D"
 ```
  - Setup the authentication string thats needed later: 
 ```python
