@@ -10,20 +10,32 @@ A tvdb version2 API client, generated using swagger's codegen
   apikey = "0629B785CE550C8D"
  
  - Setup the authentication string thats needed later: 
-    authentication_string = {"apikey":apikey, "username":"", "userpass":""}
+```python
+authentication_string = {"apikey":apikey, "username":"", "userpass":""}
+```
 
  - Create a unauthenticated client instance:
-    unauthenticated_client = ApiClient(base_url)
+```python
+unauthenticated_client = ApiClient(base_url)
+```
  
  - Create an AuthenticationApi object instance
-    auth_api = AuthenticationApi(unauthenticated_client)
+```python
+auth_api = AuthenticationApi(unauthenticated_client)
+```
 
  - Get the Bearer token using the authentication_string
-    access_token = auth_api.login_post(authentication_string)
+```python
+access_token = auth_api.login_post(authentication_string)
+```
 
  - Setup the authenticated client instance:
-    auth_client = ApiClient(base_url, 'Authorization', 'Bearer ' + access_token.token)
+```python
+auth_client = ApiClient(base_url, 'Authorization', 'Bearer ' + access_token.token)
+```
 
  - Now your able to use the API's query endpoints like:
-    SearchApi(auth_client).search_series_get(name='Breaking Bad')
-    SeriesApi(auth_client).series_id_get(80379)
+```python
+SearchApi(auth_client).search_series_get(name='Breaking Bad')
+SeriesApi(auth_client).series_id_get(80379)
+```
