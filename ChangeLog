@@ -1,0 +1,12 @@
+CHANGES
+=======
+
+* Added unicode support
+* Updated requirements.txt and changelog
+* Changed api endpoint in readme.md
+* Updated after first build
+* First attempt of creating a python pip package
+* Another typo
+* missed one code block
+* Markup for readme.md
+* Initial version of the tvdbv2 swagger python api client

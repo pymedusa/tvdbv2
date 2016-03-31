@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: tvdbapiv2
+Version: 0.0.1.dev8
+Summary: Swagger client for the thetvdb.com public api v2
+Home-page: https://github.com/pymedusa/tvdbv2
+Author: p0psicles
+Author-email: p0psicles@gmail.com
+License: UNKNOWN
+Description: False
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developres
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Libraries
