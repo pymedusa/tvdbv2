@@ -47,7 +47,6 @@ class SeriesApi(object):
 
     def series_id_get(self, id, **kwargs):
         """
-    
         Returns a series records that contains all information known about a particular series id.
 
         This method makes a synchronous HTTP request by default. To make an
@@ -122,14 +121,13 @@ class SeriesApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=files,
-                                            response_type='Series',
+                                            response_type='SeriesData',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
     def series_id_head(self, id, **kwargs):
         """
-        
         Returns header information only about the given series ID.
 
         This method makes a synchronous HTTP request by default. To make an

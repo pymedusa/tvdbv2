@@ -6,23 +6,29 @@ A tvdb version2 API client, generated using swagger's codegen
  - For ease of demonstration i've configured the following variables before going into the API's methods.
 ```
 base_url = 'https://api-beta.thetvdb.com'
-client_id = 'username' (optional! Only required for the /user routes)
-client_secret = 'pass' (optional! Only required for the /user routes)
+client_id = 'username' # (optional! Only required for the /user routes)
+client_secret = 'pass' # (optional! Only required for the /user routes)
 apikey = "0629B785CE550C8D"
 ```
- - Setup the authentication string thats needed later: 
+
+ - Import the tvdbapiv2 package
+ ```python
+ import tvdbapiv2
+ ```
+
+ - Setup the authentication string thats needed later:
 ```python
 authentication_string = {"apikey":apikey, "username":"", "userpass":""}
 ```
 
  - Create a unauthenticated client instance:
 ```python
-unauthenticated_client = ApiClient(base_url)
+unauthenticated_client = tvdbapiv2.ApiClient(base_url)
 ```
- 
+
  - Create an AuthenticationApi object instance
 ```python
-auth_api = AuthenticationApi(unauthenticated_client)
+auth_api = tvdbapiv2.AuthenticationApi(unauthenticated_client)
 ```
 
  - Get the Bearer token using the authentication_string
@@ -32,7 +38,7 @@ access_token = auth_api.login_post(authentication_string)
 
  - Setup the authenticated client instance:
 ```python
-auth_client = ApiClient(base_url, 'Authorization', 'Bearer ' + access_token.token)
+auth_client = tvdbapiv2.ApiClient(base_url, 'Authorization', 'Bearer ' + access_token.token)
 ```
 
  - Now your able to use the API's query endpoints like:

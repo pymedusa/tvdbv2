@@ -125,14 +125,13 @@ class SearchApi(object):
                                             body=body_params,
                                             post_params=form_params,
                                             files=files,
-                                            response_type='EpisodeData',
+                                            response_type='SearchSeries',
                                             auth_settings=auth_settings,
                                             callback=params.get('callback'))
         return response
 
     def search_series_params_get(self, **kwargs):
         """
-        
         Returns an array of parameters to query by in the `/search/series` route.
 
         This method makes a synchronous HTTP request by default. To make an

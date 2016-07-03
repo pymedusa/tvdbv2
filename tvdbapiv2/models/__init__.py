@@ -8,6 +8,8 @@ from .not_authorized import NotAuthorized
 from .conflict import Conflict
 from .filter_keys import FilterKeys
 from .series import Series
+from .series_data import SeriesData
+from .search_series import SearchSeries
 from .episode_data_query_params import EpisodeDataQueryParams
 from .episode_data import EpisodeData
 from .episode import Episode
