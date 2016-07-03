@@ -1,0 +1,8 @@
+CHANGES
+=======
+
+* First attempt of creating a python pip package
+* Another typo
+* missed one code block
+* Markup for readme.md
+* Initial version of the tvdbv2 swagger python api client
