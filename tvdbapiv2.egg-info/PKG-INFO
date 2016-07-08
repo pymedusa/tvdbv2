@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
 Name: tvdbapiv2
-Version: 0.0.1.dev5
+Version: 0.0.1.dev6
 Summary: Swagger client for the thetvdb.com public api v2
 Home-page: https://github.com/pymedusa/tvdbv2
 Author: p0psicles

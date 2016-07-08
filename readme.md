@@ -43,6 +43,6 @@ auth_client = tvdbapiv2.ApiClient(base_url, 'Authorization', 'Bearer ' + access_
 
  - Now your able to use the API's query endpoints like:
 ```python
-SearchApi(auth_client).search_series_get(name='Breaking Bad')
-SeriesApi(auth_client).series_id_get(80379)
+tvdbapiv2.SearchApi(auth_client).search_series_get(name='Breaking Bad')
+tvdbapiv2.SeriesApi(auth_client).series_id_get(80379)
 ```

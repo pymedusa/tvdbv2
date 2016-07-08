@@ -1,6 +1,7 @@
 CHANGES
 =======
 
+* Changed api endpoint in readme.md
 * Updated after first build
 * First attempt of creating a python pip package
 * Another typo

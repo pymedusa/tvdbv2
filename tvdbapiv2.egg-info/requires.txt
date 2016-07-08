@@ -1,2 +1,4 @@
 requests
 certifi
+six
+urllib3
