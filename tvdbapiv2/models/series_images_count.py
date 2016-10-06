@@ -207,7 +207,7 @@ class SeriesImagesCount(object):
         return self.__dict__ == other.__dict__
 
     def __ne__(self, other):
-        """ 
+        """
         Returns true if both objects are not equal
         """
         return not self == other
