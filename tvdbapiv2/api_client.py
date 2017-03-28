@@ -20,19 +20,18 @@ Copyright 2015 SmartBear Software
 
 from __future__ import absolute_import
 
-from . import models
+from . import models  # Used through eval.
 from .rest import RESTClientObject
 from .rest import ApiException
 
 import os
 import re
 import sys
-import urllib
 import json
 import mimetypes
-import random
 import tempfile
 import threading
+import requests
 
 from datetime import datetime
 from datetime import date
@@ -48,6 +47,7 @@ except ImportError:
     from urllib import quote
 
 from .configuration import Configuration
+from .auth.tvdb import TVDBAuth, TVDBUserAuth
 
 
 class ApiClient(object):
@@ -67,22 +67,25 @@ class ApiClient(object):
     :param header_name: a header to pass when making calls to the API.
     :param header_value: a header value to pass when making calls to the API.
     """
-    def __init__(self, host=None, header_name=None, header_value=None, cookie=None):
+    def __init__(self, host=None, cookie=None, session=None, user_agent=None, api_key=None):
 
         """
         Constructor of the class.
         """
-        self.rest_client = RESTClientObject()
+        self.session = session or requests.session()
+        if api_key:
+            self.session.auth = TVDBAuth(api_key)
+        self.rest_client = RESTClientObject(session=self.session)
         self.default_headers = {}
-        if header_name is not None:
-            self.default_headers[header_name] = header_value
+
         if host is None:
             self.host = Configuration().host
         else:
             self.host = host
         self.cookie = cookie
+
         # Set default User-Agent.
-        self.user_agent = 'Python-Swagger/1.0.0'
+        self.user_agent = user_agent or 'Python-Swagger/1.0.0'
 
     @property
     def user_agent(self):
