@@ -1,12 +1,10 @@
 CHANGES
 =======
 
-* Added unicode support
-* Updated requirements.txt and changelog
-* Changed api endpoint in readme.md
-* Updated after first build
-* First attempt of creating a python pip package
-* Another typo
-* missed one code block
-* Markup for readme.md
+1.0.0
+-----
+
+* Bumping version to 1.0.0
+* * Set status value in ApiException if response object is available. * Replace dict creation with dict literal * Replace list creations with list literals. * Add encoding declaration * Reformat for PEP8 * Replace str case with six text_type. * Use HTTPConnection from six. * Add option of passing session object to tvdbv2 lib * Changed the urllib3 exception with requests. * added IndexerAuthFailed exception. Can be useful if we start providing the user with a helpful message that probably their tvdb api key is wrong. * Add jwt TVDBAuth hook
+* Added modules for jwt token authenticatio. * Enabled lazy authentication. * Replaced urllib3 with requests * Added a session parameter, making it possible to pass a requests session object. * Added the user_agent as a parameter
 * Initial version of the tvdbv2 swagger python api client
