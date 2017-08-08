@@ -1,6 +1,9 @@
 CHANGES
 =======
 
+* Add the api base url for lazy authentication to the auth/tvdb.py constructor, as we might want to overwrite it
+* Update changelog through pbr
+
 1.0.0
 -----
 
