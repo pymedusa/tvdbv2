@@ -85,7 +85,7 @@ class Language(object):
 
 
         :return: The abbreviation of this Language.
-        :rtype: str
+        :rtype: text_type
         """
         return self._abbreviation
 
@@ -96,7 +96,7 @@ class Language(object):
 
 
         :param abbreviation: The abbreviation of this Language.
-        :type: str
+        :type: text_type
         """
         self._abbreviation = abbreviation
 
@@ -107,7 +107,7 @@ class Language(object):
 
 
         :return: The name of this Language.
-        :rtype: str
+        :rtype: text_type
         """
         return self._name
 
@@ -118,7 +118,7 @@ class Language(object):
 
 
         :param name: The name of this Language.
-        :type: str
+        :type: text_type
         """
         self._name = name
 
@@ -129,7 +129,7 @@ class Language(object):
 
 
         :return: The english_name of this Language.
-        :rtype: str
+        :rtype: text_type
         """
         return self._english_name
 
@@ -140,7 +140,7 @@ class Language(object):
 
 
         :param english_name: The english_name of this Language.
-        :type: str
+        :type: text_type
         """
         self._english_name = english_name
 

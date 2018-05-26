@@ -54,7 +54,7 @@ class Token(object):
 
 
         :return: The token of this Token.
-        :rtype: unicode
+        :rtype: text_type
         """
         return self._token
 
@@ -65,7 +65,7 @@ class Token(object):
 
 
         :param token: The token of this Token.
-        :type: unicode
+        :type: text_type
         """
         self._token = token
 

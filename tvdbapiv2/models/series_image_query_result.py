@@ -97,7 +97,7 @@ class SeriesImageQueryResult(object):
 
 
         :return: The key_type of this SeriesImageQueryResult.
-        :rtype: str
+        :rtype: text_type
         """
         return self._key_type
 
@@ -108,7 +108,7 @@ class SeriesImageQueryResult(object):
 
 
         :param key_type: The key_type of this SeriesImageQueryResult.
-        :type: str
+        :type: text_type
         """
         self._key_type = key_type
 
@@ -119,7 +119,7 @@ class SeriesImageQueryResult(object):
 
 
         :return: The sub_key of this SeriesImageQueryResult.
-        :rtype: str
+        :rtype: text_type
         """
         return self._sub_key
 
@@ -130,7 +130,7 @@ class SeriesImageQueryResult(object):
 
 
         :param sub_key: The sub_key of this SeriesImageQueryResult.
-        :type: str
+        :type: text_type
         """
         self._sub_key = sub_key
 
@@ -141,7 +141,7 @@ class SeriesImageQueryResult(object):
 
 
         :return: The file_name of this SeriesImageQueryResult.
-        :rtype: str
+        :rtype: text_type
         """
         return self._file_name
 
@@ -152,7 +152,7 @@ class SeriesImageQueryResult(object):
 
 
         :param file_name: The file_name of this SeriesImageQueryResult.
-        :type: str
+        :type: text_type
         """
         self._file_name = file_name
 
@@ -185,7 +185,7 @@ class SeriesImageQueryResult(object):
 
 
         :return: The resolution of this SeriesImageQueryResult.
-        :rtype: str
+        :rtype: text_type
         """
         return self._resolution
 
@@ -196,7 +196,7 @@ class SeriesImageQueryResult(object):
 
 
         :param resolution: The resolution of this SeriesImageQueryResult.
-        :type: str
+        :type: text_type
         """
         self._resolution = resolution
 
@@ -229,7 +229,7 @@ class SeriesImageQueryResult(object):
 
 
         :return: The thumbnail of this SeriesImageQueryResult.
-        :rtype: str
+        :rtype: text_type
         """
         return self._thumbnail
 
@@ -240,7 +240,7 @@ class SeriesImageQueryResult(object):
 
 
         :param thumbnail: The thumbnail of this SeriesImageQueryResult.
-        :type: str
+        :type: text_type
         """
         self._thumbnail = thumbnail
 

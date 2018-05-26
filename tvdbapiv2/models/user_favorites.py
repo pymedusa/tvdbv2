@@ -54,7 +54,7 @@ class UserFavorites(object):
 
 
         :return: The favorites of this UserFavorites.
-        :rtype: list[str]
+        :rtype: list[text_type]
         """
         return self._favorites
 
@@ -65,7 +65,7 @@ class UserFavorites(object):
 
 
         :param favorites: The favorites of this UserFavorites.
-        :type: list[str]
+        :type: list[text_type]
         """
         self._favorites = favorites
 

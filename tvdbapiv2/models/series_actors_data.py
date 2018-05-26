@@ -122,7 +122,7 @@ class SeriesActorsData(object):
 
 
         :return: The name of this SeriesActorsData.
-        :rtype: str
+        :rtype: text_type
         """
         return self._name
 
@@ -133,7 +133,7 @@ class SeriesActorsData(object):
 
 
         :param name: The name of this SeriesActorsData.
-        :type: str
+        :type: text_type
         """
         self._name = name
 
@@ -144,7 +144,7 @@ class SeriesActorsData(object):
 
 
         :return: The role of this SeriesActorsData.
-        :rtype: str
+        :rtype: text_type
         """
         return self._role
 
@@ -155,7 +155,7 @@ class SeriesActorsData(object):
 
 
         :param role: The role of this SeriesActorsData.
-        :type: str
+        :type: text_type
         """
         self._role = role
 
@@ -188,7 +188,7 @@ class SeriesActorsData(object):
 
 
         :return: The image of this SeriesActorsData.
-        :rtype: str
+        :rtype: text_type
         """
         return self._image
 
@@ -199,7 +199,7 @@ class SeriesActorsData(object):
 
 
         :param image: The image of this SeriesActorsData.
-        :type: str
+        :type: text_type
         """
         self._image = image
 
@@ -232,7 +232,7 @@ class SeriesActorsData(object):
 
 
         :return: The image_added of this SeriesActorsData.
-        :rtype: str
+        :rtype: text_type
         """
         return self._image_added
 
@@ -243,7 +243,7 @@ class SeriesActorsData(object):
 
 
         :param image_added: The image_added of this SeriesActorsData.
-        :type: str
+        :type: text_type
         """
         self._image_added = image_added
 
@@ -254,7 +254,7 @@ class SeriesActorsData(object):
 
 
         :return: The last_updated of this SeriesActorsData.
-        :rtype: str
+        :rtype: text_type
         """
         return self._last_updated
 
@@ -265,7 +265,7 @@ class SeriesActorsData(object):
 
 
         :param last_updated: The last_updated of this SeriesActorsData.
-        :type: str
+        :type: text_type
         """
         self._last_updated = last_updated
 

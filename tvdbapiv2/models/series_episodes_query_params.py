@@ -54,7 +54,7 @@ class SeriesEpisodesQueryParams(object):
 
 
         :return: The data of this SeriesEpisodesQueryParams.
-        :rtype: list[str]
+        :rtype: list[text_type]
         """
         return self._data
 
@@ -65,7 +65,7 @@ class SeriesEpisodesQueryParams(object):
 
 
         :param data: The data of this SeriesEpisodesQueryParams.
-        :type: list[str]
+        :type: list[text_type]
         """
         self._data = data
 

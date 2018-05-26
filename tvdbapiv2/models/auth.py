@@ -60,7 +60,7 @@ class Auth(object):
 
 
         :return: The apikey of this Auth.
-        :rtype: str
+        :rtype: text_type
         """
         return self._apikey
 
@@ -71,7 +71,7 @@ class Auth(object):
 
 
         :param apikey: The apikey of this Auth.
-        :type: str
+        :type: text_type
         """
         self._apikey = apikey
 
@@ -82,7 +82,7 @@ class Auth(object):
 
 
         :return: The username of this Auth.
-        :rtype: str
+        :rtype: text_type
         """
         return self._username
 
@@ -93,7 +93,7 @@ class Auth(object):
 
 
         :param username: The username of this Auth.
-        :type: str
+        :type: text_type
         """
         self._username = username
 
@@ -104,7 +104,7 @@ class Auth(object):
 
 
         :return: The userpass of this Auth.
-        :rtype: str
+        :rtype: text_type
         """
         return self._userpass
 
@@ -115,7 +115,7 @@ class Auth(object):
 
 
         :param userpass: The userpass of this Auth.
-        :type: str
+        :type: text_type
         """
         self._userpass = userpass
 

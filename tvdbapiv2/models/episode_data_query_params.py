@@ -54,7 +54,7 @@ class EpisodeDataQueryParams(object):
 
 
         :return: The data of this EpisodeDataQueryParams.
-        :rtype: list[str]
+        :rtype: list[text_type]
         """
         return self._data
 
@@ -65,7 +65,7 @@ class EpisodeDataQueryParams(object):
 
 
         :param data: The data of this EpisodeDataQueryParams.
-        :type: list[str]
+        :type: list[text_type]
         """
         self._data = data
 

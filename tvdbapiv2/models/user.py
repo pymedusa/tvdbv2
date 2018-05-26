@@ -60,7 +60,7 @@ class User(object):
 
 
         :return: The user_name of this User.
-        :rtype: str
+        :rtype: text_type
         """
         return self._user_name
 
@@ -71,7 +71,7 @@ class User(object):
 
 
         :param user_name: The user_name of this User.
-        :type: str
+        :type: text_type
         """
         self._user_name = user_name
 
@@ -82,7 +82,7 @@ class User(object):
 
 
         :return: The language of this User.
-        :rtype: str
+        :rtype: text_type
         """
         return self._language
 
@@ -93,7 +93,7 @@ class User(object):
 
 
         :param language: The language of this User.
-        :type: str
+        :type: text_type
         """
         self._language = language
 
@@ -104,7 +104,7 @@ class User(object):
 
 
         :return: The favorites_displaymode of this User.
-        :rtype: str
+        :rtype: text_type
         """
         return self._favorites_displaymode
 
@@ -115,7 +115,7 @@ class User(object):
 
 
         :param favorites_displaymode: The favorites_displaymode of this User.
-        :type: str
+        :type: text_type
         """
         self._favorites_displaymode = favorites_displaymode
 

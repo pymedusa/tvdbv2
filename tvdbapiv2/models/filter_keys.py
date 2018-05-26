@@ -54,7 +54,7 @@ class FilterKeys(object):
 
 
         :return: The data of this FilterKeys.
-        :rtype: list[str]
+        :rtype: list[text_type]
         """
         return self._data
 
@@ -65,7 +65,7 @@ class FilterKeys(object):
 
 
         :param data: The data of this FilterKeys.
-        :type: list[str]
+        :type: list[text_type]
         """
         self._data = data
 

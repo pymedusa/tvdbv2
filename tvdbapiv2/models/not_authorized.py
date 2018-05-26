@@ -54,7 +54,7 @@ class NotAuthorized(object):
 
 
         :return: The error of this NotAuthorized.
-        :rtype: str
+        :rtype: text_type
         """
         return self._error
 
@@ -65,7 +65,7 @@ class NotAuthorized(object):
 
 
         :param error: The error of this NotAuthorized.
-        :type: str
+        :type: text_type
         """
         self._error = error
 
