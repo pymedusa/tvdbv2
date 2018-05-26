@@ -43,9 +43,9 @@ class BasicEpisode(object):
             'aired_season': 'int',
             'dvd_episode_number': 'int',
             'dvd_season': 'int',
-            'episode_name': 'str',
+            'episode_name': 'text_type',
             'id': 'int',
-            'overview': 'str'
+            'overview': 'text_type'
         }
 
         self.attribute_map = {

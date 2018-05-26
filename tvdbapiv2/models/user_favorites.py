@@ -38,7 +38,7 @@ class UserFavorites(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'favorites': 'list[str]'
+            'favorites': 'list[text_type]'
         }
 
         self.attribute_map = {

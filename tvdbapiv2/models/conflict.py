@@ -38,7 +38,7 @@ class Conflict(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'error': 'str'
+            'error': 'text_type'
         }
 
         self.attribute_map = {

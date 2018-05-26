@@ -38,10 +38,10 @@ class SeriesEpisodesSummary(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'aired_seasons': 'list[str]',
-            'aired_episodes': 'str',
-            'dvd_seasons': 'list[str]',
-            'dvd_episodes': 'str'
+            'aired_seasons': 'list[text_type]',
+            'aired_episodes': 'text_type',
+            'dvd_seasons': 'list[text_type]',
+            'dvd_episodes': 'text_type'
         }
 
         self.attribute_map = {

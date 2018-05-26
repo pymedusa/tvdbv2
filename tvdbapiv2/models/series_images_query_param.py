@@ -38,10 +38,10 @@ class SeriesImagesQueryParam(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'key_type': 'str',
-            'language_id': 'str',
-            'resolution': 'list[str]',
-            'sub_key': 'list[str]'
+            'key_type': 'text_type',
+            'language_id': 'text_type',
+            'resolution': 'list[text_type]',
+            'sub_key': 'list[text_type]'
         }
 
         self.attribute_map = {

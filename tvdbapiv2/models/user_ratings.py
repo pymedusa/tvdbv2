@@ -38,7 +38,7 @@ class UserRatings(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'rating_type': 'str',
+            'rating_type': 'text_type',
             'rating_item_id': 'int',
             'rating': 'int'
         }

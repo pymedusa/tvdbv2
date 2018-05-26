@@ -38,9 +38,9 @@ class User(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'user_name': 'str',
-            'language': 'str',
-            'favorites_displaymode': 'str'
+            'user_name': 'text_type',
+            'language': 'text_type',
+            'favorites_displaymode': 'text_type'
         }
 
         self.attribute_map = {

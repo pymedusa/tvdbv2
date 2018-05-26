@@ -38,9 +38,9 @@ class Auth(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'apikey': 'str',
-            'username': 'str',
-            'userpass': 'str'
+            'apikey': 'text_type',
+            'username': 'text_type',
+            'userpass': 'text_type'
         }
 
         self.attribute_map = {

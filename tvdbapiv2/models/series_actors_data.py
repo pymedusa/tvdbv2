@@ -40,13 +40,13 @@ class SeriesActorsData(object):
         self.swagger_types = {
             'id': 'int',
             'series_id': 'int',
-            'name': 'str',
-            'role': 'str',
+            'name': 'text_type',
+            'role': 'text_type',
             'sort_order': 'int',
-            'image': 'str',
+            'image': 'text_type',
             'image_author': 'int',
-            'image_added': 'str',
-            'last_updated': 'str'
+            'image_added': 'text_type',
+            'last_updated': 'text_type'
         }
 
         self.attribute_map = {

@@ -38,7 +38,7 @@ class Token(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'token': 'unicode'
+            'token': 'text_type'
         }
 
         self.attribute_map = {

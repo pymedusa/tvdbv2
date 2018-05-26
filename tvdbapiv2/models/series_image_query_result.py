@@ -39,13 +39,13 @@ class SeriesImageQueryResult(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'key_type': 'str',
-            'sub_key': 'str',
-            'file_name': 'str',
+            'key_type': 'text_type',
+            'sub_key': 'text_type',
+            'file_name': 'text_type',
             'language_id': 'int',
-            'resolution': 'str',
+            'resolution': 'text_type',
             'ratings_info': 'int',
-            'thumbnail': 'str'
+            'thumbnail': 'text_type'
         }
 
         self.attribute_map = {

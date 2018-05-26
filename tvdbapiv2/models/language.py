@@ -39,9 +39,9 @@ class Language(object):
         """
         self.swagger_types = {
             'id': 'int',
-            'abbreviation': 'str',
-            'name': 'str',
-            'english_name': 'str'
+            'abbreviation': 'text_type',
+            'name': 'text_type',
+            'english_name': 'text_type'
         }
 
         self.attribute_map = {

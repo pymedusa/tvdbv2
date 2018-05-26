@@ -38,7 +38,7 @@ class UserRatingsQueryParams(object):
                                   and the value is json key in definition.
         """
         self.swagger_types = {
-            'data': 'list[str]'
+            'data': 'list[text_type]'
         }
 
         self.attribute_map = {
