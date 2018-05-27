@@ -29,6 +29,7 @@ import threading
 from datetime import date, datetime
 
 import requests
+from requests.compat import urljoin
 
 # python 2 and python 3 compatibility library
 from six import binary_type, iteritems, string_types, text_type
@@ -114,7 +115,7 @@ class ApiClient(object):
             body = self.sanitize_for_serialization(body)
 
         # request url
-        url = self.host + resource_path
+        url = urljoin(self.host, resource_path)
 
         # perform request and return response
         response_data = self.request(method, url,
