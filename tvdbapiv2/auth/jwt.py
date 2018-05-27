@@ -7,6 +7,8 @@ See:
     https://jwt.io/introduction/
 """
 
+from __future__ import absolute_import, unicode_literals
+
 import json
 import logging
 from base64 import urlsafe_b64decode
