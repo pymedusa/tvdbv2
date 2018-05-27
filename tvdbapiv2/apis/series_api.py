@@ -80,7 +80,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_get`")
 
-        resource_path = '/series/{id}'.replace('{format}', 'json')
+        resource_path = '/series/{id}'
         method = 'GET'
 
         path_params = {}
@@ -162,7 +162,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_head`")
 
-        resource_path = '/series/{id}'.replace('{format}', 'json')
+        resource_path = '/series/{id}'
         method = 'HEAD'
 
         path_params = {}
@@ -241,7 +241,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_actors_get`")
 
-        resource_path = '/series/{id}/actors'.replace('{format}', 'json')
+        resource_path = '/series/{id}/actors'
         method = 'GET'
 
         path_params = {}
@@ -320,7 +320,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_episodes_get`")
 
-        resource_path = '/series/{id}/episodes'.replace('{format}', 'json')
+        resource_path = '/series/{id}/episodes'
         method = 'GET'
 
         path_params = {}
@@ -411,7 +411,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_episodes_query_get`")
 
-        resource_path = '/series/{id}/episodes/query'.replace('{format}', 'json')
+        resource_path = '/series/{id}/episodes/query'
         method = 'GET'
 
         path_params = {}
@@ -504,7 +504,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_episodes_query_params_get`")
 
-        resource_path = '/series/{id}/episodes/query/params'.replace('{format}', 'json')
+        resource_path = '/series/{id}/episodes/query/params'
         method = 'GET'
 
         path_params = {}
@@ -583,7 +583,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_episodes_summary_get`")
 
-        resource_path = '/series/{id}/episodes/summary'.replace('{format}', 'json')
+        resource_path = '/series/{id}/episodes/summary'
         method = 'GET'
 
         path_params = {}
@@ -669,7 +669,7 @@ class SeriesApi(object):
         if ('keys' not in params) or (params['keys'] is None):
             raise ValueError("Missing the required parameter `keys` when calling `series_id_filter_get`")
 
-        resource_path = '/series/{id}/filter'.replace('{format}', 'json')
+        resource_path = '/series/{id}/filter'
         method = 'GET'
 
         path_params = {}
@@ -754,7 +754,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_filter_params_get`")
 
-        resource_path = '/series/{id}/filter/params'.replace('{format}', 'json')
+        resource_path = '/series/{id}/filter/params'
         method = 'GET'
 
         path_params = {}
@@ -837,7 +837,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_images_get`")
 
-        resource_path = '/series/{id}/images'.replace('{format}', 'json')
+        resource_path = '/series/{id}/images'
         method = 'GET'
 
         path_params = {}
@@ -924,7 +924,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_images_query_get`")
 
-        resource_path = '/series/{id}/images/query'.replace('{format}', 'json')
+        resource_path = '/series/{id}/images/query'
         method = 'GET'
 
         path_params = {}
@@ -1014,7 +1014,7 @@ class SeriesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `series_id_images_query_params_get`")
 
-        resource_path = '/series/{id}/images/query/params'.replace('{format}', 'json')
+        resource_path = '/series/{id}/images/query/params'
         method = 'GET'
 
         path_params = {}

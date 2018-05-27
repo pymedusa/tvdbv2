@@ -80,7 +80,7 @@ class EpisodesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `episodes_id_get`")
 
-        resource_path = '/episodes/{id}'.replace('{format}', 'json')
+        resource_path = '/episodes/{id}'
         method = 'GET'
 
         path_params = {}

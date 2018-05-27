@@ -73,7 +73,7 @@ class UsersApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/user'.replace('{format}', 'json')
+        resource_path = '/user'
         method = 'GET'
 
         path_params = {}
@@ -144,7 +144,7 @@ class UsersApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/user/favorites'.replace('{format}', 'json')
+        resource_path = '/user/favorites'
         method = 'GET'
 
         path_params = {}
@@ -220,7 +220,7 @@ class UsersApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `user_favorites_id_put`")
 
-        resource_path = '/user/favorites/{id}'.replace('{format}', 'json')
+        resource_path = '/user/favorites/{id}'
         method = 'PUT'
 
         path_params = {}
@@ -298,7 +298,7 @@ class UsersApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `user_favorites_id_delete`")
 
-        resource_path = '/user/favorites/{id}'.replace('{format}', 'json')
+        resource_path = '/user/favorites/{id}'
         method = 'DELETE'
 
         path_params = {}
@@ -371,7 +371,7 @@ class UsersApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/user/ratings'.replace('{format}', 'json')
+        resource_path = '/user/ratings'
         method = 'GET'
 
         path_params = {}
@@ -443,7 +443,7 @@ class UsersApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/user/ratings/query'.replace('{format}', 'json')
+        resource_path = '/user/ratings/query'
         method = 'GET'
 
         path_params = {}
@@ -516,7 +516,7 @@ class UsersApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/user/ratings/query/params'.replace('{format}', 'json')
+        resource_path = '/user/ratings/query/params'
         method = 'GET'
 
         path_params = {}
@@ -598,7 +598,7 @@ class UsersApi(object):
             raise ValueError("Missing the required parameter `item_id`"
                              " when calling `user_ratings_item_type_item_id_delete`")
 
-        resource_path = '/user/ratings/{itemType}/{itemId}'.replace('{format}', 'json')
+        resource_path = '/user/ratings/{itemType}/{itemId}'
         method = 'DELETE'
 
         path_params = {}
@@ -690,7 +690,7 @@ class UsersApi(object):
             raise ValueError("Missing the required parameter `item_rating`"
                              " when calling `user_ratings_item_type_item_id_item_rating_put`")
 
-        resource_path = '/user/ratings/{itemType}/{itemId}/{itemRating}'.replace('{format}', 'json')
+        resource_path = '/user/ratings/{itemType}/{itemId}/{itemRating}'
         method = 'PUT'
 
         path_params = {}

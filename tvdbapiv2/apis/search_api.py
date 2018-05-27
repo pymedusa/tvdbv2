@@ -79,7 +79,7 @@ class SearchApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/search/series'.replace('{format}', 'json')
+        resource_path = '/search/series'
         method = 'GET'
 
         path_params = {}
@@ -157,7 +157,7 @@ class SearchApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/search/series/params'.replace('{format}', 'json')
+        resource_path = '/search/series/params'
         method = 'GET'
 
         path_params = {}

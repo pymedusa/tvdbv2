@@ -85,7 +85,7 @@ class UpdatesApi(object):
         if ('from_time' not in params) or (params['from_time'] is None):
             raise ValueError("Missing the required parameter `from_time` when calling `updated_query_get`")
 
-        resource_path = '/updated/query'.replace('{format}', 'json')
+        resource_path = '/updated/query'
         method = 'GET'
 
         path_params = {}
@@ -162,7 +162,7 @@ class UpdatesApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/updated/query/params'.replace('{format}', 'json')
+        resource_path = '/updated/query/params'
         method = 'GET'
 
         path_params = {}

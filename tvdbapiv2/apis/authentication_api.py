@@ -80,7 +80,7 @@ class AuthenticationApi(object):
         if ('authentication_string' not in params) or (params['authentication_string'] is None):
             raise ValueError("Missing the required parameter `authentication_string` when calling `login_post`")
 
-        resource_path = '/login'.replace('{format}', 'json')
+        resource_path = '/login'
         method = 'POST'
 
         path_params = {}
@@ -155,7 +155,7 @@ class AuthenticationApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/refresh_token'.replace('{format}', 'json')
+        resource_path = '/refresh_token'
         method = 'GET'
 
         path_params = {}

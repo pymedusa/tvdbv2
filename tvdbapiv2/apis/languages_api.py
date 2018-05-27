@@ -76,7 +76,7 @@ class LanguagesApi(object):
             params[key] = val
         del params['kwargs']
 
-        resource_path = '/languages'.replace('{format}', 'json')
+        resource_path = '/languages'
         method = 'GET'
 
         path_params = {}
@@ -152,7 +152,7 @@ class LanguagesApi(object):
         if ('id' not in params) or (params['id'] is None):
             raise ValueError("Missing the required parameter `id` when calling `languages_id_get`")
 
-        resource_path = '/languages/{id}'.replace('{format}', 'json')
+        resource_path = '/languages/{id}'
         method = 'GET'
 
         path_params = {}
