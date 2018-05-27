@@ -5,8 +5,8 @@ This module provides authentication to TheTVDB API v2.
 """
 
 import logging
-
 from time import time
+
 import requests
 from requests.compat import urljoin
 

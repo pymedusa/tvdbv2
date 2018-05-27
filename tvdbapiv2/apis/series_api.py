@@ -19,14 +19,10 @@ Copyright 2015 SmartBear Software
 
 from __future__ import absolute_import
 
-import sys
-import os
-
-# python 2 and python 3 compatibility library
 from six import iteritems
 
-from ..configuration import Configuration
 from ..api_client import ApiClient
+from ..configuration import Configuration
 
 
 class SeriesApi(object):
@@ -60,7 +56,9 @@ class SeriesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID of the series (required)
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: Series
                  If the method is called asynchronously,
                  returns the request thread.
@@ -140,7 +138,9 @@ class SeriesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID of the series (required)
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: None
                  If the method is called asynchronously,
                  returns the request thread.
@@ -365,7 +365,8 @@ class SeriesApi(object):
 
     def series_id_episodes_query_get(self, id, **kwargs):
         """
-        This route allows the user to query against episodes for the given series. The response is a paginated array of episode records that have been filtered down to basic information.
+        This route allows the user to query against episodes for the given series.
+        The response is a paginated array of episode records that have been filtered down to basic information.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -385,13 +386,16 @@ class SeriesApi(object):
         :param str dvd_episode: DVD episode number
         :param str imdb_id: IMDB id of the episode
         :param str page: Page of results to fetch. Defaults to page 1 if not provided.
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: SeriesEpisodesQuery
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
-        all_params = ['id', 'absolute_number', 'aired_season', 'aired_episode', 'dvd_season', 'dvd_episode', 'imdb_id', 'page', 'accept_language', 'callback']
+        all_params = ['id', 'absolute_number', 'aired_season', 'aired_episode', 'dvd_season',
+                      'dvd_episode', 'imdb_id', 'page', 'accept_language', 'callback']
 
         params = locals()
         for key, val in iteritems(params['kwargs']):
@@ -543,7 +547,9 @@ class SeriesApi(object):
 
     def series_id_episodes_summary_get(self, id, **kwargs):
         """
-        Returns a summary of the episodes and seasons available for the series.\n\n__Note__: Season \"0\" is for all episodes that are considered to be specials.
+        Returns a summary of the episodes and seasons available for the series.
+
+        Note: Season "0" is for all episodes that are considered to be specials.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -621,7 +627,8 @@ class SeriesApi(object):
     def series_id_filter_get(self, id, keys, **kwargs):
         """
 
-        Returns a series records, filtered by the supplied comma-separated list of keys. Query keys can be found at the `/series/{id}/filter/params` route.
+        Returns a series records, filtered by the supplied comma-separated list of keys.
+        Query keys can be found at the `/series/{id}/filter/params` route.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -635,7 +642,9 @@ class SeriesApi(object):
             for asynchronous request. (optional)
         :param int id: ID of the series (required)
         :param str keys: Comma-separated list of keys to filter by (required)
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: Series
                  If the method is called asynchronously,
                  returns the request thread.
@@ -721,7 +730,9 @@ class SeriesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID of the series (required)
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: FilterKeys
                  If the method is called asynchronously,
                  returns the request thread.
@@ -802,7 +813,9 @@ class SeriesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID of the series (required)
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: SeriesImagesCounts
                  If the method is called asynchronously,
                  returns the request thread.
@@ -883,10 +896,13 @@ class SeriesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID of the series (required)
-        :param str key_type: Type of image you're querying for (fanart, poster, etc. See ../images/query/params for more details).
+        :param str key_type: Type of image you're querying for
+                             (fanart, poster, etc. See ../images/query/params for more details).
         :param str resolution: Resolution to filter by (1280x1024, for example)
         :param str sub_key: Subkey for the above query keys. See /series/{id}/images/query/params for more information
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: SeriesImageQueryResults
                  If the method is called asynchronously,
                  returns the request thread.
@@ -960,7 +976,8 @@ class SeriesApi(object):
     def series_id_images_query_params_get(self, id, **kwargs):
         """
 
-        Returns the allowed query keys for the `/series/{id}/images/query` route. Contains a parameter record for each unique `keyType`, listing values that will return results.
+        Returns the allowed query keys for the `/series/{id}/images/query` route.
+        Contains a parameter record for each unique `keyType`, listing values that will return results.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function
@@ -973,7 +990,9 @@ class SeriesApi(object):
         :param callback function: The callback function
             for asynchronous request. (optional)
         :param int id: ID of the series (required)
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: SeriesImagesQueryParams
                  If the method is called asynchronously,
                  returns the request thread.

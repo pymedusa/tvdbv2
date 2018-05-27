@@ -19,14 +19,10 @@ Copyright 2015 SmartBear Software
 
 from __future__ import absolute_import
 
-import sys
-import os
-
-# python 2 and python 3 compatibility library
 from six import iteritems
 
-from ..configuration import Configuration
 from ..api_client import ApiClient
+from ..configuration import Configuration
 
 
 class LanguagesApi(object):
@@ -48,7 +44,10 @@ class LanguagesApi(object):
     def languages_get(self, **kwargs):
         """
 
-        All available languages. These language abbreviations can be used in the `Accept-Language` header for routes that return translation records.
+        All available languages.
+
+        These language abbreviations can be used in the `Accept-Language` header
+        for routes that return translation records.
 
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please define a `callback` function

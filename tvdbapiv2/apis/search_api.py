@@ -19,14 +19,10 @@ Copyright 2015 SmartBear Software
 
 from __future__ import absolute_import
 
-import sys
-import os
-
-# python 2 and python 3 compatibility library
 from six import iteritems
 
-from ..configuration import Configuration
 from ..api_client import ApiClient
+from ..configuration import Configuration
 
 
 class SearchApi(object):
@@ -63,7 +59,9 @@ class SearchApi(object):
         :param str name: Name of the series to search for.
         :param str imdb_id: IMDB id of the episode
         :param str zap2it_id: Zap2it ID of the series to search for.
-        :param str accept_language: Records are returned with the Episode name and Overview in the desired language, if it exists. If there is no translation for the given language, then the record is still returned but with empty values for the translated fields.
+        :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
+                                    if it exists. If there is no translation for the given language, then the record
+                                    is still returned but with empty values for the translated fields.
         :return: EpisodeData
                  If the method is called asynchronously,
                  returns the request thread.

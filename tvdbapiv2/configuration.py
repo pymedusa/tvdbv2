@@ -20,12 +20,13 @@ Copyright 2015 SmartBear Software
 
 from __future__ import absolute_import
 
-from requests.packages.urllib3.util import make_headers
-from six.moves.http_client import HTTPConnection
-import sys
 import logging
+import sys
+
+from requests.packages.urllib3.util import make_headers
 
 from six import iteritems
+from six.moves.http_client import HTTPConnection
 
 
 def singleton(cls, *args, **kw):

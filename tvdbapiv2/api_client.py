@@ -20,11 +20,6 @@ Copyright 2015 SmartBear Software
 
 from __future__ import absolute_import
 
-from requests.exceptions import RequestException
-from . import models  # Used through eval.
-from .rest import RESTClientObject
-from .exceptions import AuthError
-
 import os
 import re
 import sys
@@ -32,16 +27,18 @@ import json
 import mimetypes
 import tempfile
 import threading
-import requests
+from datetime import date, datetime
 
-from datetime import datetime
-from datetime import date
+import requests
 
 # python 2 and python 3 compatibility library
 from six import iteritems, text_type
+
+from . import models  # noqa: F401 -- Used through eval.
 from .auth.tvdb import TVDBAuth
 from .configuration import Configuration
-from .exceptions import ApiException
+from .exceptions import ApiException, AuthError
+from .rest import RESTClientObject
 
 
 class ApiClient(object):

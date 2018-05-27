@@ -19,6 +19,7 @@ Copyright 2015 SmartBear Software
 """
 
 from pprint import pformat
+
 from six import iteritems
 
 
@@ -125,7 +126,7 @@ class SeriesEpisodes(object):
         """
         return self.to_str()
 
-    def __eq__(self, other): 
+    def __eq__(self, other):
         """
         Returns true if both objects are equal
         """
@@ -136,4 +137,3 @@ class SeriesEpisodes(object):
         Returns true if both objects are not equal
         """
         return not self == other
-
