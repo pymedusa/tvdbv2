@@ -372,7 +372,7 @@ class ApiClient(object):
                 with open(v, 'rb') as f:
                     filename = os.path.basename(f.name)
                     filedata = f.read()
-                    mimetype = mimetypes.\
+                    mimetype = mimetypes. \
                         guess_type(filename)[0] or 'application/octet-stream'
                     params[k] = tuple([filename, filedata, mimetype])
 
@@ -455,8 +455,8 @@ class ApiClient(object):
 
         content_disposition = response.getheader("Content-Disposition")
         if content_disposition:
-            filename = re.\
-                search(r'filename=[\'"]?([^\'"\s]+)[\'"]?', content_disposition).\
+            filename = re. \
+                search(r'filename=[\'"]?([^\'"\s]+)[\'"]?', content_disposition). \
                 group(1)
             path = os.path.join(os.path.dirname(path), filename)
 
@@ -544,7 +544,7 @@ class ApiClient(object):
 
         for attr, attr_type in iteritems(instance.swagger_types):
             if data is not None \
-               and instance.attribute_map[attr] in data\
+               and instance.attribute_map[attr] in data \
                and isinstance(data, (list, dict)):
                 value = data[instance.attribute_map[attr]]
                 setattr(instance, attr, self.__deserialize(value, attr_type))
