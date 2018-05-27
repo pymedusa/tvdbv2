@@ -32,7 +32,7 @@ import requests
 from requests.compat import urljoin
 
 # python 2 and python 3 compatibility library
-from six import binary_type, iteritems, string_types, text_type
+from six import binary_type, iteritems, text_type
 
 from . import models  # noqa: F401 -- Used through eval.
 from .auth.tvdb import TVDBAuth
@@ -92,15 +92,13 @@ class ApiClient(object):
         if path_params:
             path_params = self.sanitize_for_serialization(path_params)
             for k, v in iteritems(path_params):
-                replacement = text_type(self.to_path_value(v))
-                resource_path = resource_path.\
-                    replace('{' + k + '}', replacement)
+                replacement = self.to_path_value(v)
+                resource_path = resource_path.replace('{' + k + '}', replacement)
 
         # query parameters
         if query_params:
             query_params = self.sanitize_for_serialization(query_params)
-            query_params = {k: self.to_path_value(v)
-                            for k, v in iteritems(query_params)}
+            query_params = {k: self.to_path_value(v) for k, v in iteritems(query_params)}
 
         # post parameters
         if post_params or files:
@@ -143,12 +141,13 @@ class ApiClient(object):
 
         :param obj: object or string value.
 
-        :return binary_type: quoted value.
+        :return text_type: quoted value.
         """
         if type(obj) == list:
             return ','.join(obj)
-        else:
-            return binary_type(obj)
+        if isinstance(obj, binary_type):
+            return obj.decode('utf-8')
+        return text_type(obj)
 
     def sanitize_for_serialization(self, obj):
         """
@@ -165,7 +164,7 @@ class ApiClient(object):
         :param obj: The data to serialize.
         :return: The serialized form of data.
         """
-        types = string_types + (int, float, bool, tuple)
+        types = (text_type, binary_type, int, float, bool, tuple)
         if isinstance(obj, type(None)):
             return None
         elif isinstance(obj, types):
