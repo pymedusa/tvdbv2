@@ -62,7 +62,7 @@ class SearchApi(object):
         :param str accept_language: Records are returned with the Episode name and Overview in the desired language,
                                     if it exists. If there is no translation for the given language, then the record
                                     is still returned but with empty values for the translated fields.
-        :return: EpisodeData
+        :return: SearchSeries
                  If the method is called asynchronously,
                  returns the request thread.
         """
