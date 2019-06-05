@@ -9,6 +9,7 @@ Unreleased
   * Remove pbr
   * Update changelog
   * Allow wheel
+  * Add build & dist folders to gitignore
 * Updates
   * Update metadata
   * Remove the need for `contextlib2` dependency

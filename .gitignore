@@ -1,6 +1,8 @@
 #  Build             #
 ######################
 *.egg-info/*
+build/*
+dist/*
 
 #  Compiled source   #
 ######################
