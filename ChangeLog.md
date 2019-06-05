@@ -8,6 +8,7 @@ Unreleased
   * Clean up
   * Remove pbr
   * Update changelog
+  * Allow wheel
 * Updates
   * Update metadata
   * Remove the need for `contextlib2` dependency
